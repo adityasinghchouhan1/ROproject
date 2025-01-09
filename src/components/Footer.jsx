@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <footer className="text-white bg-primary mt-5">
-      <div className="container px-6 pt-12 pb-3 mx-10">
+      <div className="container px-6 pt-12 pb-3">
         {/* Footer Top Section */}
         <div className="flex flex-col lg:flex-row items-center lg:justify-between text-center lg:text-left gap-8">
           <div className="lg:w-2/3">
@@ -100,7 +100,7 @@ const Footer = () => {
             &copy; 2024 R/O Purifier. All Rights Reserved.
           </p>
           <p className="text-xs">
-            Powered by:{" "}
+            Powered by:{' '}
             <a
               href="https://ssstechies.com/"
               target="_blank"
@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

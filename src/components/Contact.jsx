@@ -1,9 +1,9 @@
-import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import banner from '../assets/pages-banner.jpg';
-import shape from '../assets/shape.png';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Import React Icons
+import React from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import banner from '../assets/pages-banner.jpg'
+import shape from '../assets/shape.png'
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa' // Import React Icons
 
 const Contact = () => {
   return (
@@ -11,27 +11,32 @@ const Contact = () => {
       <Navbar />
 
       {/* Contact Banner Section */}
-      <div className="flex justify-center -my-10">
-             <img
-               src={banner}
-               alt="Our Services"
-               className="rounded-lg h-[600px] w-full object-cover"
-             />
-           </div>
+      <div
+        className="flex sm:justify-start justify-center sm:items-center w-full sm:h-[600px] h-[400px] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${banner})` }}
+      >
+        <h2 className="text-6xl flex font-bold text-center sm:text-start items-center text-white mb-12 sm:ps-20">
+          Contect Us
+        </h2>
+      </div>
 
       {/* Contact Section with Form on Left and Contact Details on Right */}
       <div className="flex justify-center items-start px-4 pt-12">
         <div className="w-full max-w-7xl flex flex-col md:flex-row gap-8">
           {/* Left Section: Contact Form */}
           <div className="w-full md:w-1/2 bg-white rounded-lg p-8">
-            <h2 className="text-3xl font-semibold text-primary mb-6">Contact Us</h2>
+            <h2 className="text-3xl font-semibold text-primary mb-6">
+              Contact Us
+            </h2>
             <form
               action="https://formspree.io/f/xdkkayvy"
               method="POST"
               className="space-y-6"
             >
               <div className="flex flex-col">
-                <label htmlFor="name" className="text-gray-600 mb-2">Name</label>
+                <label htmlFor="name" className="text-gray-600 mb-2">
+                  Name
+                </label>
                 <input
                   type="text"
                   id="name"
@@ -41,7 +46,9 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="email" className="text-gray-600 mb-2">Email</label>
+                <label htmlFor="email" className="text-gray-600 mb-2">
+                  Email
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -51,7 +58,9 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="phone" className="text-gray-600 mb-2">Phone Number</label>
+                <label htmlFor="phone" className="text-gray-600 mb-2">
+                  Phone Number
+                </label>
                 <input
                   type="tel"
                   id="phone"
@@ -61,7 +70,9 @@ const Contact = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="message" className="text-gray-600 mb-2">Message</label>
+                <label htmlFor="message" className="text-gray-600 mb-2">
+                  Message
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -81,10 +92,13 @@ const Contact = () => {
 
           {/* Right Section: Contact Details */}
           <div className="w-full md:w-1/2 bg-white rounded-lg p-8">
-            <h2 className="text-3xl font-semibold text-primary mb-6">Contact Details</h2>
+            <h2 className="text-3xl font-semibold text-primary mb-6">
+              Contact Details
+            </h2>
             <div className="space-y-4">
               <div>
-                You can always give us your best service to get to you fast and get the job done right the first time.
+                You can always give us your best service to get to you fast and
+                get the job done right the first time.
               </div>
 
               {/* Phone */}
@@ -119,15 +133,15 @@ const Contact = () => {
       </div>
 
       {/* Shape Image at the Bottom */}
-     <img
-             src={shape}
-             alt="Shape"
-             className="absolute bottom-[47px] left-0 w-full"
-           />
+      <img
+        src={shape}
+        alt="Shape"
+        className="absolute bottom-[15px] left-0 w-full"
+      />
 
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

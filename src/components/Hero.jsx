@@ -36,9 +36,9 @@ const Hero = () => {
             className="h-full bg-center bg-cover"
             style={{ backgroundImage: `url(${bg1})` }}
           >
-            <div className="relative z-10 flex flex-col sm:items-start justify-center items-center h-full text-center text-white px-32 sm:px-24">
-              <div className="sm:w-[50%] flex flex-col justify-center items-center ">
-                <h1 className="text-4xl sm:text-5xl font-bold text-center">
+            <div className="relative z-10 flex flex-col sm:items-start justify-center items-center h-full text-center text-white px-16 sm:px-40">
+              <div className="sm:w-[70%] w-[100%] flex flex-col justify-center items-center ">
+                <h1 className="text-3xl sm:text-5xl font-bold text-center">
                   Get Connect with our RO Experts
                 </h1>
                 <span className="mt-4 text-sm tracking-wide uppercase sm:text-left text-center">
@@ -58,13 +58,11 @@ const Hero = () => {
             className="h-full bg-center bg-cover"
             style={{ backgroundImage: `url(${bg2})` }}
           >
-            <div className="relative z-10 flex flex-col sm:items-start justify-center items-center h-full text-center text-white px-32 sm:px-24">
-              <div className="sm:w-[50%] flex flex-col justify-center items-center ">
-                <h1 className="text-4xl sm:text-5xl font-bold text-center">
-                  Download TO Template RO - Ro Service
-                </h1>
-                <h1 className="text-4xl sm:text-5xl font-bold  text-center">
-                  in CodingMSTR At Just 200rs/-
+            <div className="relative z-10 flex flex-col sm:items-start justify-center items-center h-full text-center text-white px-16 sm:px-24">
+              <div className="sm:w-[70%] flex flex-col justify-center items-center ">
+                <h1 className="text-3xl sm:text-5xl font-bold text-center">
+                  Download TO Template RO - Ro Service in CodingMSTR At Just
+                  200rs/-
                 </h1>
                 <span className="mt-4 text-sm tracking-wide uppercase sm:text-left text-center">
                   Fast and excellent RO service Provider in CodingMSTR

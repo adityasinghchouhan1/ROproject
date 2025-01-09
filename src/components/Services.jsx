@@ -1,9 +1,9 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import banner from "../assets/pages-banner.jpg"; 
-import shape from "../assets/shape.png";
-import { FaTools, FaCogs, FaShieldAlt, FaCheckCircle } from "react-icons/fa";
+import React from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import banner from '../assets/pages-banner.jpg'
+import shape from '../assets/shape.png'
+import { FaTools, FaCogs, FaShieldAlt, FaCheckCircle } from 'react-icons/fa'
 
 const Services = () => {
   return (
@@ -11,12 +11,13 @@ const Services = () => {
       <Navbar />
 
       {/* Banner Section */}
-      <div className="flex justify-center -my-10">
-        <img
-          src={banner}
-          alt="Our Services"
-          className="rounded-lg h-[600px] w-full object-cover"
-        />
+      <div
+        className="flex sm:justify-start justify-center sm:items-center w-full h-[600px] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${banner})` }}
+      >
+        <h2 className="text-6xl flex font-bold text-center sm:text-start items-center text-white mb-12 sm:ps-20">
+          Services
+        </h2>
       </div>
 
       {/* Services Section */}
@@ -39,8 +40,8 @@ const Services = () => {
             </h3>
             <p className="text-gray-600 mb-4">
               We offer professional installation services for all types of water
-              purifiers. Our team ensures that your purifier is set up for optimal
-              performance and longevity.
+              purifiers. Our team ensures that your purifier is set up for
+              optimal performance and longevity.
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
@@ -65,8 +66,9 @@ const Services = () => {
               Maintenance Services
             </h3>
             <p className="text-gray-600 mb-4">
-              Regular maintenance ensures your water purifier works efficiently. We
-              offer comprehensive maintenance plans to keep your system running smoothly.
+              Regular maintenance ensures your water purifier works efficiently.
+              We offer comprehensive maintenance plans to keep your system
+              running smoothly.
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
@@ -91,9 +93,9 @@ const Services = () => {
               Repair Services
             </h3>
             <p className="text-gray-600 mb-4">
-              Our experienced technicians provide fast and reliable repair services
-              for all types of water purifiers. We are here to ensure that your
-              purifier works like new.
+              Our experienced technicians provide fast and reliable repair
+              services for all types of water purifiers. We are here to ensure
+              that your purifier works like new.
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
@@ -144,8 +146,8 @@ const Services = () => {
               Water Quality Testing
             </h3>
             <p className="text-gray-600 mb-4">
-              We offer professional water quality testing services to ensure your
-              purifier is delivering safe, clean water.
+              We offer professional water quality testing services to ensure
+              your purifier is delivering safe, clean water.
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
@@ -170,8 +172,8 @@ const Services = () => {
               24/7 Support
             </h3>
             <p className="text-gray-600 mb-4">
-              We provide 24/7 customer support for all your water purifier needs. Our
-              team is available around the clock to assist you.
+              We provide 24/7 customer support for all your water purifier
+              needs. Our team is available around the clock to assist you.
             </p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
@@ -191,15 +193,15 @@ const Services = () => {
         </div>
       </div>
 
- <img
+      <img
         src={shape}
         alt="Shape"
-        className="absolute bottom-[47px] left-0 w-full"
+        className="absolute bottom-[15px] left-0 w-full"
       />
       {/* Footer */}
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

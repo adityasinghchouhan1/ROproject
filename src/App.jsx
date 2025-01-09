@@ -1,12 +1,12 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
-    <div className=" min-h-screen">
+    <div className="min-h-screen">
       <Outlet />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
